@@ -39,7 +39,7 @@ class NewPhotoViewController: UIViewController,UIImagePickerControllerDelegate,U
         imageview!.addGestureRecognizer(tapGestureRecognizer)
 
     }
-    func imageTapped(_ img: AnyObject)
+    @objc func imageTapped(_ img: AnyObject)
     {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
